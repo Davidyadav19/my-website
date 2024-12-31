@@ -6,18 +6,114 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="https://fonts.google.com/share?selection.family=Comforter%20Brush%7CM%20PLUS%202%7CMerriweather%20Sans:wght@300%7CMontagu%20Slab%7CPacifico" href="/css/master.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      .topcontainer {
+        background: linear-gradient(135deg, #6dd5ed, #2193b0);
+        color: white;
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .profile-image {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin: 20px auto;
+        display: block;
+      }
+
+      h1, h2, h3 {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin: 20px 0;
+      }
+
+      .middle-container {
+        padding: 50px 20px;
+      }
+
+      .projects ul, .education ul, .certifications ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .projects ul li, .education ul li, .certifications ul li {
+        margin: 15px 0;
+      }
+
+      .contact-me {
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #2193b0;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .btn:hover {
+        background-color: #6dd5ed;
+      }
+
+      .bottom-container {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .footer-link {
+        color: #6dd5ed;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      .footer-link:hover {
+        color: #2193b0;
+      }
+
+      .project-image {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .project-card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 15px 0;
+        background: #fff;
+      }
+    </style>
   </head>
   <body>
     <div class="topcontainer">
-      <img class="top-cloud"src="cloud.png" alt="cant display">
       <h1>I'm David Raj.</h1>
-      <h2>An engineering student</h2>
-      <img class="bottom-cloud" src="cloud.png" alt="cant display">
-      <img src="mountain.png" alt="cant d">
+      <h2>An Engineering Student</h2>
+      <img class="profile-image" src="https://raw.githubusercontent.com/Davidyadav19/my-website/main/CV%20Photo.jpeg" alt="Profile Picture">
     </div>
     <div class="middle-container">
       <div class="profile">
-        <img class="profile-image"src="https://github.com/Davidyadav19/my-website/blob/main/CV%20Photo.jpeg?raw=true" alt="Cant show image">
         <h2>About Me</h2>
         <p class="hello-description">I am David Raj Domasani, a 5th-year engineering student passionate about energy transition. I am looking for a 6-month internship in renewable energy, power electronics, or energy management, starting from March 2025. My educational journey has equipped me with diverse skills and experiences, fostering my commitment to sustainable development.</p>
       </div>
@@ -34,9 +130,22 @@
       <div class="projects">
         <h2>Projects</h2>
         <ul>
-          <li><strong>Modelling of Energy Flows for Residentials Integrating Renewable Energy Sources</strong> - Developed a Simulink model for solar-powered homes with battery and grid tie (06/2024 - 09/2024).</li>
-          <li><strong>Operation and Control of a Hybrid Microgrid Based on Wind and Fuel Cells in Grid-Connected Mode</strong> - Created a Simulink model for a microgrid with wind and fuel cell sources (02/2024 - 06/2024).</li>
-          <li><strong>Electrical Redundancy for Critical Facilities</strong> - Designed redundant or backup power systems for critical facilities using SLDs and mitigating single points of failure (02/2022 - 07/2022).</li>
+          <li class="project-card">
+            <strong>Modelling of Energy Flows for Residentials Integrating Renewable Energy Sources</strong>
+            <p>Developed a Simulink model for solar-powered homes with battery and grid tie (06/2024 - 09/2024).</p>
+          </li>
+          <li class="project-card">
+            <strong>Operation and Control of a Hybrid Microgrid Based on Wind and Fuel Cells in Grid-Connected Mode</strong>
+            <p>Created a Simulink model for a microgrid with wind and fuel cell sources (02/2024 - 06/2024).</p>
+          </li>
+          <li class="project-card">
+            <strong>Electrical Redundancy for Critical Facilities</strong>
+            <p>Designed redundant or backup power systems for critical facilities using SLDs and mitigating single points of failure (02/2022 - 07/2022).</p>
+          </li>
+          <li class="project-card">
+            <strong>Anomaly Detection in Smart Meters</strong>
+            <p>Developed an AI-based solution for detecting anomalies in energy consumption patterns, enhancing smart grid reliability (01/2023 - 04/2023).</p>
+          </li>
         </ul>
       </div>
       <hr>
@@ -50,17 +159,17 @@
       <hr>
       <div class="contact-me">
         <h2>Get In Touch</h2>
-        <h3>An Engineer who wants to contribute and see world beyond self driving vehicles and renewable energy.</h3>
-        <p class="contact-message">Soon to be graduate looking to work for tech startups.</p>
-        <a class="btn" href="mailto:david.domasani@esme.fr">CONTACT ME</a>
+        <h3>A passionate engineer eager to shape a sustainable energy future through innovation and technology.</h3>
+        <p class="contact-message">Currently exploring opportunities in renewable energy and power electronics to contribute to global energy transition goals.</p>
+        <a class="btn" href="mailto:davidraj9449@gmail.com">CONTACT ME</a>
       </div>
     </div>
-
     <div class="bottom-container">
       <a class="footer-link" href="https://www.linkedin.com/in/david-raj-35366317a">LinkedIn</a>
-      <p class="copy-right">© 2025 David Raj  Domasani</p>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <p class="copy-right">© 2022 David Raj Domasani</p>
     </div>
-
   </body>
 </html>
+
 
