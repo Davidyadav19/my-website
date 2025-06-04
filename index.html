@@ -5,109 +5,14 @@
     <title>David Raj</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="https://fonts.google.com/share?selection.family=Comforter%20Brush%7CM%20PLUS%202%7CMerriweather%20Sans:wght@300%7CMontagu%20Slab%7CPacifico" href="/css/master.css">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-      }
-
-      .topcontainer {
-        background: linear-gradient(135deg, #6dd5ed, #2193b0);
-        color: white;
-        text-align: center;
-        padding: 50px 0;
-      }
-
-      .profile-image {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin: 20px auto;
-        display: block;
-      }
-
-      h1, h2, h3 {
-        margin: 0;
-      }
-
-      h1 {
-        font-size: 3rem;
-      }
-
-      h2 {
-        font-size: 2rem;
-        margin: 20px 0;
-      }
-
-      .middle-container {
-        padding: 50px 20px;
-      }
-
-      .projects ul, .education ul, .certifications ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      .projects ul li, .education ul li, .certifications ul li {
-        margin: 15px 0;
-      }
-
-      .contact-me {
-        text-align: center;
-        margin: 40px 0;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #2193b0;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-      }
-
-      .btn:hover {
-        background-color: #6dd5ed;
-      }
-
-      .bottom-container {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-      }
-
-      .footer-link {
-        color: #6dd5ed;
-        margin: 0 10px;
-        text-decoration: none;
-      }
-
-      .footer-link:hover {
-        color: #2193b0;
-      }
-
-      .project-image {
-        width: 100%;
-        border-radius: 5px;
-      }
-
-      .project-card {
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 15px;
-        margin: 15px 0;
-        background: #fff;
-      }
-    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
-    <div class="topcontainer">
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <div class="top-container">
       <h1>I'm David Raj.</h1>
       <h2>An Engineering Student</h2>
       <img class="profile-image" src="https://raw.githubusercontent.com/Davidyadav19/my-website/main/CV%20Photo.jpeg" alt="Profile Picture">
@@ -115,42 +20,88 @@
     <div class="middle-container">
       <div class="profile">
         <h2>About Me</h2>
-        <p class="hello-description">I am David Raj Domasani, a 5th-year engineering student passionate about energy transition. I am looking for a 6-month internship in renewable energy, power electronics, or energy management, starting from March 2025. My educational journey has equipped me with diverse skills and experiences, fostering my commitment to sustainable development.</p>
+        <p class="hello-description">
+          I am David Raj Domasani, a 5th-year engineering student passionate about energy transition. I am looking for a 6-month internship in renewable energy, power electronics, or related fields.
+        </p>
       </div>
       <hr>
-      <div class="education">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>Masters in Power Conversion and Renewable Energies</strong> - École Spéciale de Mécanique et d'Électricité (ESME), 2024 - 2025 <a class="footer-link" href="https://www.esme.fr/"></a></li>
-          <li><strong>Bachelors of Technology in Electrical and Electronics Engineering</strong> - Jawaharlal Nehru Technological University, 2019 - 2023</li>
-          <li><strong>Technical Diploma in Electrical and Electronics</strong> - State Board of Technical Education Andhra Pradesh, 2015 - 2018</li>
-        </ul>
+      <div class="education-timeline">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/ESME_Sudria_logo.svg" alt="ESME Logo"></div>
+            <div class="timeline-content">
+              <h3>Masters in Power Conversion and Renewable Energies</h3>
+              <p>École Spéciale de Mécanique et d'Électricité (ESME), 2024 - 2025</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-university"></i></div>
+            <div class="timeline-content">
+              <h3>Bachelors of Technology in Electrical and Electronics Engineering</h3>
+              <p>Jawaharlal Nehru Technological University, 2019 - 2023</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="timeline-content">
+              <h3>Technical Diploma in Electrical and Electronics</h3>
+              <p>State Board of Technical Education Andhra Pradesh, 2015 - 2018</p>
+            </div>
+          </div>
+        </div>
       </div>
       <hr>
-      <div class="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li class="project-card">
-            <strong>Modelling of Energy Flows for Residentials Integrating Renewable Energy Sources</strong>
+      <div class="projects-section">
+        <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card fancy-card">
+            <div class="project-icon"><i class="fa-solid fa-house-solar-panel"></i></div>
+            <div class="project-tags">
+              <span class="tag simulink">Simulink</span>
+              <span class="tag solar">Solar</span>
+            </div>
+            <h3>Energy Flows for Residentials Integrating Renewable Energy Sources</h3>
             <p>Developed a Simulink model for solar-powered homes with battery and grid tie (06/2024 - 09/2024).</p>
-          </li>
-          <li class="project-card">
-            <strong>Operation and Control of a Hybrid Microgrid Based on Wind and Fuel Cells in Grid-Connected Mode</strong>
+          </div>
+          <div class="project-card fancy-card">
+            <div class="project-icon"><i class="fa-solid fa-wind"></i></div>
+            <div class="project-tags">
+              <span class="tag simulink">Simulink</span>
+              <span class="tag wind">Wind</span>
+              <span class="tag fuelcell">Fuel Cell</span>
+            </div>
+            <h3>Hybrid Microgrid Based on Wind and Fuel Cells</h3>
             <p>Created a Simulink model for a microgrid with wind and fuel cell sources (02/2024 - 06/2024).</p>
-          </li>
-          <li class="project-card">
-            <strong>Electrical Redundancy for Critical Facilities</strong>
-            <p>Designed redundant or backup power systems for critical facilities using SLDs and mitigating single points of failure (02/2022 - 07/2022).</p>
-          </li>
-          <li class="project-card">
-            <strong>Anomaly Detection in Smart Meters</strong>
-            <p>Developed an AI-based solution for detecting anomalies in energy consumption patterns, enhancing smart grid reliability (01/2023 - 04/2023).</p>
-          </li>
-        </ul>
+          </div>
+          <div class="project-card fancy-card">
+            <div class="project-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="project-tags">
+              <span class="tag power">Power</span>
+              <span class="tag reliability">Reliability</span>
+            </div>
+            <h3>Electrical Redundancy for Critical Facilities</h3>
+            <p>Designed backup power systems for critical facilities using SLDs and mitigating single points of failure (02/2022 - 07/2022).</p>
+          </div>
+          <div class="project-card fancy-card">
+            <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="project-tags">
+              <span class="tag ai">AI</span>
+              <span class="tag smartgrid">Smart Grid</span>
+            </div>
+            <h3>Anomaly Detection in Smart Meters</h3>
+            <p>
+              Developed an AI-based solution for detecting anomalies in energy consumption patterns, enhancing smart grid reliability (01/2023 - 04/2023).
+            </p>
+            <a class="github-btn" href="https://github.com/Davidyadav19/anomaly-detection" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
       </div>
       <hr>
       <div class="certifications">
-        <h2>Certifications</h2>
+        <h2><i class="fa-solid fa-award"></i> Certifications</h2>
         <ul>
           <li>NGKF – Chief Engineer, Critical Environments</li>
           <li>Proven Strategies for Energy Savings in Retail Environments by Schneider Electric</li>
@@ -160,7 +111,9 @@
       <div class="contact-me">
         <h2>Get In Touch</h2>
         <h3>A passionate engineer eager to shape a sustainable energy future through innovation and technology.</h3>
-        <p class="contact-message">Currently exploring opportunities in renewable energy and power electronics to contribute to global energy transition goals.</p>
+        <p class="contact-message">
+          Currently exploring opportunities in renewable energy and power electronics to contribute to global energy transition goals.
+        </p>
         <a class="btn" href="mailto:david.domasani@esme.fr">CONTACT ME</a>
       </div>
     </div>
@@ -168,6 +121,32 @@
       <a class="footer-link" href="https://www.linkedin.com/in/david-raj-35366317a">LinkedIn</a>
       <p class="copy-right">© 2025 David Raj Domasani</p>
     </div>
+    <script>
+      // Dark/Light mode toggle
+      document.getElementById('theme-toggle').onclick = function() {
+        document.body.classList.toggle('dark-mode');
+      };
+
+      // Animate project cards on scroll
+      const cards = document.querySelectorAll('.fancy-card');
+      const animateOnScroll = () => {
+        cards.forEach(card => {
+          const rect = card.getBoundingClientRect();
+          if(rect.top < window.innerHeight - 50) {
+            card.classList.add('visible');
+          }
+        });
+        // Animate timeline
+        document.querySelectorAll('.timeline-item').forEach(item => {
+          const rect = item.getBoundingClientRect();
+          if(rect.top < window.innerHeight - 50) {
+            item.classList.add('visible');
+          }
+        });
+      };
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
+    </script>
   </body>
 </html>
 
