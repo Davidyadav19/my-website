@@ -11,21 +11,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
+    <!-- Menu Bar -->
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#education-section">Education</a></li>
+        <li><a href="#experience-section">Experience</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#certifications-section">Certifications</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
     <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-    <div class="top-container">
+    <div class="top-container" id="top-section">
       <h1>I'm David Raj.</h1>
       <h2>An Engineering Student</h2>
       <img class="profile-image" src="https://raw.githubusercontent.com/Davidyadav19/my-website/main/CV%20Photo.jpeg" alt="Profile Picture">
     </div>
     <div class="middle-container">
-      <div class="profile">
+      <div class="profile" id="about-section">
         <h2>About Me</h2>
         <p class="hello-description">
-          I am David Raj Domasani, a 5th-year engineering student passionate about energy transition. I am looking for a 6-month internship in renewable energy, power electronics, or related fields.
+          I am David Raj Domasani, a 5th-year engineering student passionate about energy transition, data centers.curretnly doing 6-month internship at Imogis france as assisatnt engineer.
         </p>
       </div>
       <hr>
-      <div class="education-timeline">
+      <div class="education-timeline" id="education-section">
         <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
         <div class="timeline">
           <div class="timeline-item">
@@ -52,7 +63,54 @@
         </div>
       </div>
       <hr>
-      <div class="projects-section">
+      <div class="experience-section" id="experience-section">
+        <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+        <div class="experience-timeline">
+          <div class="exp-item">
+            <div class="exp-icon"><i class="fa-brands fa-aws"></i></div>
+            <div class="exp-content">
+              <h3>Amazon Web Services (AWS)</h3>
+              <span class="exp-role">DCEO Engineer · Internship</span>
+              <span class="exp-date">Jun 2024 - Aug 2024 · Île-de-France, France · On-site</span>
+              <p>Worked on Redundant Systems, Electrical Power Systems and utilized 18+ technical skills.</p>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="exp-content">
+              <h3>Tirumala Cable Networks</h3>
+              <span class="exp-role">Associate Network Engineer · Internship</span>
+              <span class="exp-date">Nov 2021 - Jan 2022 · Guntur, Andhra Pradesh, India · Hybrid</span>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-icon"><i class="fa-solid fa-signal"></i></div>
+            <div class="exp-content">
+              <h3>Transmedia Group</h3>
+              <span class="exp-role">Broadband Technician · Contract Part-time</span>
+              <span class="exp-date">May 2020 - Aug 2020 · Guntur, Andhra Pradesh, India · On-site</span>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-icon"><i class="fa-solid fa-industry"></i></div>
+            <div class="exp-content">
+              <h3>Siva Parvathi Spinning Mills</h3>
+              <span class="exp-role">Contract</span>
+              <span class="exp-date">Jun 2018 - Apr 2019 · Chebrolu, Andhra Pradesh, India</span>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-icon"><i class="fa-solid fa-water"></i></div>
+            <div class="exp-content">
+              <h3>Kumar Pumps & Motors</h3>
+              <span class="exp-role">Industrial Training · Internship</span>
+              <span class="exp-date">Apr 2017 - May 2017 · Tenali, Andhra Pradesh, India · On-site</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="projects-section" id="projects-section">
         <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
         <div class="projects-grid">
           <div class="project-card fancy-card">
@@ -100,7 +158,7 @@
         </div>
       </div>
       <hr>
-      <div class="certifications">
+      <div class="certifications" id="certifications-section">
         <h2><i class="fa-solid fa-award"></i> Certifications</h2>
         <ul>
           <li>NGKF – Chief Engineer, Critical Environments</li>
@@ -108,13 +166,32 @@
         </ul>
       </div>
       <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>A passionate engineer eager to shape a sustainable energy future through innovation and technology.</h3>
+      <!-- Interactive Contact Section -->
+      <div class="contact-me" id="contact-section">
+        <h2><i class="fa-solid fa-envelope"></i> Get In Touch</h2>
+        <div class="contact-cards">
+          <div class="contact-card shake" id="email-card" tabindex="0">
+            <i class="fa-solid fa-paper-plane"></i>
+            <h3>Email Me</h3>
+            <p>Let's connect! I'm always happy to chat about energy, tech, or opportunities.</p>
+            <a class="btn" href="mailto:david.domasani@esme.fr">Send Email</a>
+          </div>
+          <div class="contact-card" id="linkedin-card" tabindex="0">
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>See my journey & connect for professional collaboration or a friendly hello.</p>
+            <a class="btn" href="https://www.linkedin.com/in/david-raj-35366317a" target="_blank" rel="noopener">Connect</a>
+          </div>
+          <div class="contact-card surprise" id="fun-card" tabindex="0">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Fun Fact</h3>
+            <p id="fun-fact">Did you know? Solar energy is the most abundant energy resource on earth!</p>
+            <button class="btn" id="fact-btn" type="button">Surprise Me</button>
+          </div>
+        </div>
         <p class="contact-message">
           Currently exploring opportunities in renewable energy and power electronics to contribute to global energy transition goals.
         </p>
-        <a class="btn" href="mailto:david.domasani@esme.fr">CONTACT ME</a>
       </div>
     </div>
     <div class="bottom-container">
@@ -127,8 +204,10 @@
         document.body.classList.toggle('dark-mode');
       };
 
-      // Animate project cards on scroll
+      // Animate project cards, timeline, and experience on scroll
       const cards = document.querySelectorAll('.fancy-card');
+      const experience = document.querySelectorAll('.exp-item');
+      const timeline = document.querySelectorAll('.timeline-item');
       const animateOnScroll = () => {
         cards.forEach(card => {
           const rect = card.getBoundingClientRect();
@@ -136,16 +215,73 @@
             card.classList.add('visible');
           }
         });
-        // Animate timeline
-        document.querySelectorAll('.timeline-item').forEach(item => {
+        timeline.forEach(item => {
           const rect = item.getBoundingClientRect();
           if(rect.top < window.innerHeight - 50) {
             item.classList.add('visible');
           }
         });
+        experience.forEach(exp => {
+          const rect = exp.getBoundingClientRect();
+          if(rect.top < window.innerHeight - 50) {
+            exp.classList.add('visible');
+          }
+        });
       };
       window.addEventListener('scroll', animateOnScroll);
       window.addEventListener('load', animateOnScroll);
+
+      // Fun Fact logic
+      const facts = [
+        "Did you know? Solar energy is the most abundant energy resource on earth!",
+        "Wind turbines can be as tall as a 20-story building!",
+        "Electricity travels at the speed of light – over 186,000 miles per second.",
+        "A single lightning bolt contains enough energy to toast 100,000 slices of bread.",
+        "Hydropower is the oldest source of renewable energy used for electricity generation.",
+        "AI is helping to optimize energy grids and make them more reliable.",
+        "Engineers are key players in shaping a sustainable future!"
+      ];
+      let lastFact = 0;
+      document.getElementById('fact-btn').onclick = function() {
+        let idx;
+        do { idx = Math.floor(Math.random() * facts.length); } while(idx === lastFact);
+        lastFact = idx;
+        document.getElementById('fun-fact').innerText = facts[idx];
+        // Animate fun fact card on click
+        document.getElementById('fun-card').classList.remove('pop');
+        setTimeout(() => {
+          document.getElementById('fun-card').classList.add('pop');
+        }, 10);
+      };
+      // Add animated focus/hover to contact cards
+      document.querySelectorAll('.contact-card').forEach(card => {
+        card.addEventListener('focus', () => card.classList.add('active'));
+        card.addEventListener('blur', () => card.classList.remove('active'));
+        card.addEventListener('mouseenter', () => card.classList.add('active'));
+        card.addEventListener('mouseleave', () => card.classList.remove('active'));
+      });
+
+      // Smooth scroll for navbar
+      document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const href = this.getAttribute('href');
+          const section = document.querySelector(href);
+          if(section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // Make menu bar sticky on scroll
+      window.addEventListener('scroll', function() {
+        const nav = document.getElementById('navbar');
+        if(window.scrollY > 0) {
+          nav.classList.add('sticky');
+        } else {
+          nav.classList.remove('sticky');
+        }
+      });
     </script>
   </body>
 </html>
