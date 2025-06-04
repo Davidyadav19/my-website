@@ -118,12 +118,13 @@ hr {
 }
 .navbar ul {
   display: flex;
+  flex-direction: row; /* Always horizontal by default */
   justify-content: center;
   align-items: center;
   gap: 36px;
   padding: 10px 0;
   margin: 0;
-  list-style: none;
+  list-style: none; /* Remove bullets */
 }
 .navbar li {
   margin: 0;
@@ -143,6 +144,13 @@ hr {
   background: #66BFBF;
   color: #fff;
   outline: none;
+}
+/* Responsive: stack vertically only on small screens */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 @media (max-width: 900px) {
   .navbar ul { flex-direction: column; gap: 4px; }
